@@ -1,0 +1,347 @@
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  display: block;
+  width: 350px;
+}
+
+body {
+  /* background-image: linear-gradient(to top, #f0de40, #ede04f, #eae25d, #e7e46a, #e5e576, #e6e578, #e7e57a, #e8e57c, #ece475, #f1e26d, #f6e066, #fbde5f); */
+  font-family: "Encode Sans SC", sans-serif;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  align-items: center;
+  padding: 10px 10px;
+  margin-bottom: 20px;
+  background-image: linear-gradient(to right, #f9d423 0%, #ff4e50 100%);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.logout {
+  height: 40px;
+  border: none;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: all 0.5s;
+}
+
+.logout:hover {
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  transform: scale(1.1);
+}
+
+.logout:focus {
+  outline: none;
+}
+
+#credit {
+  font-size: 110%;
+  text-align: center;
+  font-weight: bold;
+  background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 300px;
+  height: 40px;
+  margin: auto;
+  padding: 5px 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 700px;
+}
+
+h1 {
+  padding: 10px 10px;
+  text-align: center;
+  font-size: 80px;
+  width: 50%;
+}
+
+h1 img {
+  width: 120px;
+}
+
+.login-main {
+  background-image: linear-gradient(to right, #f83600c0 0%, #f9d523c4 100%);
+  margin: 20px 20px;
+  padding: 20px 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-flow: column wrap;
+  width: 600px;
+  height: 400px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.login-main input {
+  width: 200px;
+  height: 50px;
+  border: 2px solid;
+  border-radius: 25px;
+  font-family: "Encode Sans SC", sans-serif;
+  font-size: 100%;
+  padding: 10px 10px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.login-main input:focus {
+  outline: none;
+}
+
+.login {
+  height: 40px;
+  border: none;
+  width: 100px;
+  margin-right: 10px;
+  border-radius: 50px;
+  font-family: "Encode Sans SC", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #f8b500;
+  color: white;
+  border: 2px solid black;
+  transition: all 0.5s;
+}
+
+.login:hover {
+  color: white;
+  background-color: black;
+  border: 2px solid grey;
+}
+
+.login:focus {
+  outline: none;
+}
+
+#login_error,
+#trans_error,
+#with_error,
+#depo_error {
+  font-size: 14px;
+  position: relative;
+  left: 6px;
+}
+
+.pinfo {
+  transition: all 0.5s;
+  position: absolute;
+  top: 620px;
+  margin: 10px 10px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background-color: white;
+  padding: 10px 10px;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.pinfo ul {
+  padding: 10px 10px;
+}
+
+.pinfo li {
+  list-style-type: "→  ";
+}
+
+.hello {
+  display: inline;
+  font-size: 22px;
+  padding: 10px 35px;
+  position: relative;
+  bottom: 10px;
+  left: 20px;
+}
+
+.currbal,
+h4 {
+  text-align: right;
+  padding: 10px 10px;
+  margin: 10px 10px;
+}
+
+.main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.m-left {
+  font-family: "Encode Sans SC", sans-serif;
+  padding: 20px 20px;
+  height: 600px;
+  width: 700px;
+  margin: 20px 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  overflow: scroll;
+}
+
+.m-left::-webkit-scrollbar {
+  width: 5px;
+}
+
+.m-left::-webkit-scrollbar-track {
+  background-color: white;
+  width: 10px;
+}
+
+.m-left::-webkit-scrollbar-thumb {
+  border: 1px solid transparent;
+  border-radius: 100px;
+  background-color: black;
+  background-clip: content-box;
+}
+
+.movements__row {
+  padding: 30px 60px;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px dashed #8c8b8b;
+}
+
+.movements__type {
+  text-align: center;
+  width: 90px;
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: #fff;
+  padding: 0.1rem 1rem;
+  border-radius: 10rem;
+  margin-right: 50px;
+}
+
+.movements__type--credit {
+  background-color: #24562b;
+}
+
+.movements__type--debit {
+  background-color: #b2022f;
+}
+
+.movements__date {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.movements__value {
+  font-size: 1.7rem;
+  margin-left: auto;
+}
+
+.m-right {
+  color: white;
+  padding: 20px 20px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  width: 400px;
+}
+
+.m-right input {
+  font-weight: bold;
+  font-family: "Encode Sans SC", sans-serif;
+  height: 40px;
+  width: 200px;
+  padding: 20px 20px;
+  margin: 10px 10px;
+  border-radius: 20px;
+  border: none;
+  text-align: center;
+}
+
+.m-right input:focus,
+.actbtn:focus {
+  outline: none;
+}
+
+.actbtn {
+  font-weight: bold;
+  font-family: "Encode Sans SC", sans-serif;
+  height: 40px;
+  width: 90px;
+  border-radius: 20px;
+  border: none;
+  transition: all 0.3s;
+}
+
+.actbtn:hover {
+  background-color: black;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.transfer,
+.withdraw,
+.deposit {
+  margin: 20px;
+  width: 400px;
+  padding: 20px 20px;
+  font-size: 110%;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.transfer {
+  height: 200px;
+  background-color: #b2022f;
+}
+
+.withdraw {
+  height: 130px;
+  background-color: #f4bc1c;
+}
+
+.deposit {
+  height: 130px;
+  background-color: #24562b;
+}
+
+#error {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 12px;
+}
+
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 35px;
+}
+
+.f-left {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#credential {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.hidekaro {
+  display: none;
+}
